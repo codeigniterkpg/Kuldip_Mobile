@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Add custom product carousel block to the home page -->
+        <referenceContainer name="content">
+            <block class="Kuldip\Mobile\Block\ProductCarousel" name="product.carousel" template="Kuldip_Mobile::product_carousel.phtml" />
+        </referenceContainer>
+
+        <!-- Additional layout updates specific to the home page -->
+        <referenceBlock name="page.main.title" remove="true" />
+
+        <!-- Add other blocks or update existing blocks on the home page as needed -->
+
+    </body>
+</page>
